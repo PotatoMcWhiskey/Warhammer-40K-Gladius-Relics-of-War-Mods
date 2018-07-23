@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<building>
+	<modifiers>
+		<modifier visible="0">
+			<effects>
+				<productionCost set="36"/>
+				<oreCost set="50"/>
+				<populationRequired set="1"/>
+				<slotsRequired set="1"/>
+				<energy add="-2"/>
+			</effects>
+		</modifier>
+		<modifier>
+			<effects>
+				<loyalty add="1"/>
+				<populationLimit add="1"/>
+				<production add="6"/>
+			</effects>
+		</modifier>
+	</modifiers>
+	<productionModifiers>
+		<modifier>
+			<effects>
+				
+			</effects>
+		</modifier>
+	</productionModifiers>
+	<strategyModifiers>
+		<modifier>
+			<effects>
+				<increaseInfantryProductionScore set="1.0"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+	<actions>
+		<produceUnit unit="AstraMilitarum/Guardsman"/>
+		<produceUnit unit="AstraMilitarum/Conscript"/>
+		<produceUnit unit="AstraMilitarum/HeavyWeaponsSquad" requiredUpgrade="AstraMilitarum/HeavyWeaponsSquad"/>
+		<produceUnit unit="AstraMilitarum/Bullgryn" requiredUpgrade="AstraMilitarum/Bullgryn"/>
+	</actions>
+</building>
