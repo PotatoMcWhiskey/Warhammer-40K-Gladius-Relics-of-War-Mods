@@ -11,7 +11,7 @@
 				bloodBone="ChestBone"
 				walker="1"/>
 	</model>
-	<group size="21" rowSize="7" memberDeltaX="35" memberDeltaY="35"/>
+	<group size="18" rowSize="7" memberDeltaX="35" memberDeltaY="35"/>
 	<weapons>
 		<weapon name="LasgunConscript">
 			<model>
@@ -22,7 +22,7 @@
 						fireInterval="0.5"/>
 			</model>
 		</weapon>
-		<weapon name="CloseCombatWeapon">
+		<weapon name="Bayonet">
 			<model>
 				<weapon fireInterval="1.0"
 						fireSoundCount="0"/>

@@ -270,6 +270,6 @@
 	<entry name="SpaceMarines/VindicatorFlavor" value="The Vindicator is a short-ranged sledgehammer of a vehicle, a siege tank whose massive demolisher cannon can reduce any target to a smoking crater. The Vindicator is especially favoured by the Imperial Fists, who regularly field whole squadrons of these tanks and rely upon their concentrated volleys to blast open fortress walls, flatten gun-nests and bunkers, and lay low super-heavy war engines."/>
 	// Modded units
 	<entry name="AstraMilitarum/Conscript" value="Conscript"/>
-	<entry name="AstraMilitarum/ConscriptDescription" value="Light infantry unit."/>
-	<entry name="AstraMilitarum/ConscriptFlavor" value="This is my description of the glorious Conscripts unit."/>
+	<entry name="AstraMilitarum/ConscriptDescription" value="Light Infantry Unit with a devastating charge attack."/>
+	<entry name="AstraMilitarum/ConscriptFlavor" value="In times of great need, anyone capable of wearing flak armour and carrying a Lasrifle will be pressed into service. Ill-trained and unfit for war, they are the ultimate infantry meatshield. Even untrained and ill-equipped a bayonet charge from a squad of Conscripts can keep an enemy busy for a very long time. There are just so many of them to kill."/>
 </language>

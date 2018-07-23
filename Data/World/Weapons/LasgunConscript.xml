@@ -9,7 +9,7 @@
 			<effects>
 				<attacks add="1"/>
 				<rangedArmorPenetration add="0"/> <!-- %rangedArmorPenetration add armorPiercing=- strength=3 -->
-				<rangedDamage add="1"/> <!-- %rangedDamage add strength=3 -->
+				<rangedDamage add="0.8"/> <!-- %rangedDamage add strength=3 -->
 			</effects>
 		</modifier>
 	</modifiers>
@@ -17,5 +17,6 @@
 	<traits>
 		<trait name="LasDamage" requiredUpgrade="AstraMilitarum/LasDamage"/>
 		<trait name="LasDamage" requiredUpgrade="SpaceMarines/LasDamage"/>
+		<trait name="RapidFire"/>
 	</traits>
 </weapon>

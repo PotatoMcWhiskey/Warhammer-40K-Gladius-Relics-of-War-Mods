@@ -255,6 +255,9 @@
 	<entry name="WireWeedFlavor" value="<string name='Features/WireWeedFlavor'/>"/>
 	<entry name="ZzapGun" value="Zzap Gun"/>
 	<entry name="ZzapGunFlavor" value="Zzap guns fire unstable bolts of lightning. They have the potential to punch through the hull of even the heaviest enemy vehicle amid crackling showers of sparks, but have a tendency to overload and electrocute the operating gunner."/>
+	//Modded Weapons
 	<entry name="LasgunConscript" value="Lasgun"/>
 	<entry name="LasgunConscriptFlavor" value="<string name='Weapons/LasFlavor'/>"/>
+	<entry name="Bayonet" value="Bayonet"/>
+	<entry name="BayonetFlavor" value="<string name='Weapons/MeleeFlavor'/>"/>
 </language>
