@@ -11,7 +11,7 @@
 				bloodBone="ChestBone"
 				walker="1"/>
 	</model>
-	<group size="18" rowSize="7" memberDeltaX="35" memberDeltaY="35"/>
+	<group size="18" rowSize="6" memberDeltaX="35" memberDeltaY="35"/>
 	<weapons>
 		<weapon name="LasgunConscript">
 			<model>
