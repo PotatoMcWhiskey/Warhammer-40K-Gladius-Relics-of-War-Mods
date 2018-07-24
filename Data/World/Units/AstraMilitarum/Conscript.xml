@@ -48,7 +48,7 @@
 				<foodCost set="20.0"/> <!-- %foodCost set tier=4 factor=0.5 -->
 				<hitpointsMax set="1.0"/> <!-- %hitpointsMax set toughness=3 wounds=1 -->
 				<meleeAccuracy set="2"/> <!-- %meleeAccuracy set weaponSkill=3 -->
-				<meleeAttacks set="1"/>
+				<meleeAttacks set="0"/>
 				<!-- <meleeInitiative set="3"/> -->
 				<oreCost set="10.0"/> <!-- %oreCost set tier=4 factor=0.5 -->
 				<meleeDamage set="1"/> <!-- %meleeDamage set strength=3 -->
@@ -93,6 +93,30 @@
 						soundCount="4"/>
 			</model>
 		</move>
+		<ereWeGo name="BayonetCharge"
+				consumedActionPoints="0"
+				consumedMovement="0"
+				cooldown="5"
+				requiredActionPoints="1">
+			<model>
+				<action sound="Actions/AstraMilitarumBuff"/>
+			</model>
+			<targets>
+				<selfTarget>
+					<areas>
+						<area affects="Unit">
+							<modifiers>
+								<modifier>
+									<effects>
+										<addTrait duration="1" name="BayonetCharge"/>
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</selfTarget>
+			</targets>
+		</ereWeGo>
 	</actions>
 	<traits>
 		<trait name="ExtraInfantryArmour" requiredUpgrade="AstraMilitarum/ExtraInfantryArmour"/>
