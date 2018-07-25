@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unit>
+	<model>
+		<unit mesh="Units/AstraMilitarum/Guardsman"
+				material="Units/AstraMilitarum/ImperialGuardScout"
+				idleAnimation="Units/AstraMilitarum/GuardsmanIdle"
+				idleAnimationCount="3"
+				idleContinuously="1"
+				normalWeight="0.1"
+				scale="1 1 1"
+				bloodBone="ChestBone"
+				walker="1"/>
+	</model>
+	<group size="5" rowSize="3" memberDeltaX="70" memberDeltaY="50"/>
+	<weapons>
+		<weapon name="ImperialGuardScoutBoltPistol">
+			<model>
+				<projectileWeapon mesh="Weapons/AstraMilitarum/LordCommissarBoltPistol"
+						material="Weapons/AstraMilitarum/LordCommissarBoltPistol"
+						bone="RightHandBone"
+						muzzleBone=".Muzzle0"
+						fireInterval="0.35"/>
+			</model>
+		</weapon>
+		<weapon name="Bayonet">
+			<model>
+				<weapon  	mesh="Weapons/Orks/Choppa"
+							material="Weapons/Orks/ChoppaSlugga"
+							bone="LeftHandBone"
+							fireInterval="1.0"
+							fireSoundCount="0"/>
+			</model>
+		</weapon>
+		<weapon name="FragGrenade" slotName="FragGrenade" enabled="0">
+			<model>
+				<grenadeWeapon muzzleBone="LeftHandBone"/>
+			</model>
+		</weapon>
+		<weapon name="KrakGrenade" slotName="KrakGrenade" enabled="0">
+			<model>
+				<grenadeWeapon muzzleBone="LeftHandBone"/>
+			</model>
+		</weapon>
+	</weapons>
+	<modifiers>
+		<modifier visible="0">
+			<effects>
+				<armor set="4"/> <!-- %armor set armor=5+ -->
+				<meleeArmorPenetration set="0.0"/> <!-- %meleeArmorPenetration set strength=3 -->
+				<food set="-1.0"/> <!-- %food set tier=4 factor=1 -->
+				<foodCost set="10.0"/> <!-- %foodCost set tier=4 factor=0.5 -->
+				<hitpointsMax set="2.4"/> <!-- %hitpointsMax set toughness=3 wounds=1 -->
+				<meleeAccuracy set="6"/> <!-- %meleeAccuracy set weaponSkill=3 -->
+				<meleeAttacks set="1"/>
+				<!-- <meleeInitiative set="3"/> -->
+				<oreCost set="10.0"/> <!-- %oreCost set tier=4 factor=0.5 -->
+				<meleeDamage set="1"/> <!-- %meleeDamage set strength=3 -->
+				<moraleMax set="8"/>
+				<movementMax set="4"/>
+				<productionCost set="24.0"/> <!-- %productionCost set tier=4 factor=1 -->
+				<rangedAccuracy set="8"/> <!-- %rangedAccuracy set ballisticSkill=3 -->
+			</effects>
+		</modifier>
+	</modifiers>
+	<strategyModifiers>
+		<modifier>
+			<effects>
+				<increaseInfantryScore set="1.0"/>
+			</effects>
+		</modifier>
+	</strategyModifiers>
+	<actions>
+		<attack>
+			<model>
+				<action animation="Units/AstraMilitarum/GuardsmanAttack"
+						beginFire="0.35" endFire="2.5"/>
+			</model>				
+		</attack>
+		<die>
+			<model>
+				<action animation="Units/AstraMilitarum/GuardsmanDie"
+						animationCount="3"
+						sound="Units/MediumUnarmoredDie"
+						soundCount="4"/>
+			</model>		
+		</die>
+		<idle>
+			<model>
+				<action/>
+			</model>
+		</idle>
+		<move>
+			<model>
+				<action animation="Units/AstraMilitarum/GuardsmanMove"
+						sound="Units/AstraMilitarum/InfantryMove"
+						soundCount="4"/>
+			</model>
+		</move>
+		<throwGrenade weaponSlotName="FragGrenade" cooldown="10"
+				requiredUpgrade="AstraMilitarum/FragGrenade">
+			<model>
+				<action animation="Units/AstraMilitarum/GuardsmanGrenade"
+						beginFire="0.833333333333"/>
+			</model>
+		</throwGrenade>
+		<throwGrenade weaponSlotName="KrakGrenade" cooldown="10"
+				requiredUpgrade="AstraMilitarum/KrakGrenade">
+			<model>
+				<action animation="Units/AstraMilitarum/GuardsmanGrenade"
+						beginFire="0.833333333333"/>
+			</model>				
+		</throwGrenade>
+		<mediPack cooldown="10" requiredUpgrade="AstraMilitarum/MediPack">
+			<model>
+				<action bone="ChestBone"
+						sound="Actions/Heal"/>
+			</model>
+			<targets>
+				<selfTarget>
+					<conditions>
+						<unit>
+							<damaged/>
+						</unit>
+					</conditions>
+					<areas>
+						<area affects="Unit">
+							<modifiers>
+								<modifier>
+									<effects>
+										<hitpointsFraction add="0.5"/>
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</selfTarget>
+			</targets>
+		</mediPack>
+	</actions>
+	<traits>
+		<trait name="ExtraInfantryArmour" requiredUpgrade="AstraMilitarum/ExtraInfantryArmour"/>
+		<trait name="VoxCaster" requiredUpgrade="AstraMilitarum/VoxCaster"/>
+		<trait name="RoughTerrainStealth"/>
+	</traits>
+</unit>

@@ -183,5 +183,6 @@
 		<unit type="AstraMilitarum/Guardsman" count="3"/>
 		<unit type="AstraMilitarum/Conscript"/>
 		<unit type="AstraMilitarum/LordCommissar"/>
+		<unit type="AstraMilitarum/ImperialGuardScout"/>
 	</startingUnits>
 </faction>

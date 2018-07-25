@@ -272,4 +272,7 @@
 	<entry name="AstraMilitarum/Conscript" value="Conscript"/>
 	<entry name="AstraMilitarum/ConscriptDescription" value="Light Infantry Unit with a devastating charge attack."/>
 	<entry name="AstraMilitarum/ConscriptFlavor" value="In times of great need, anyone capable of wearing flak armour and carrying a Lasrifle will be pressed into service. Ill-trained and unfit for war, they are the ultimate infantry meatshield. Even untrained and ill-equipped a bayonet charge from a squad of Conscripts can keep an enemy busy for a very long time. There are just so many of them to kill."/>
-</language>
+	<entry name="AstraMilitarum/ImperialGuardScout" value="ImperialGuardsScouts"/>
+	<entry name="AstraMilitarum/ImperialGuardScoutDescription" value="Light Infantry Unit with stealth in rough terrain."/>
+	<entry name="AstraMilitarum/ImperialGuardScoutFlavor" value="Blessed as they are with keen eyes and an innate sense for the lie of the land, the Scout is capable of finding a path through terrain others may have written off as impenetrable. Almost every regiment in the Imperial Guard has amongst its ranks men and women blessed with a nigh-preternatural empathy with the environment."/>
+	</language>

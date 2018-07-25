@@ -792,5 +792,9 @@
 	<entry name="ConscriptSergeantFlavor" value="Although themselves fully trained and accepted Guardsmen, Whiteshield sergeants wear the white badge and helmet stripe of their squad."/>
 	<entry name="BattleHardened" value="Battle Hardened"/>
 	<entry name="BattleHardenedDescription" value="Reduces the Morale Penalty"/>
-	<entry name="BattleHardenedFlavor" value="As Conscripts learn the ways of the battlefield, their resolve will grow."/>
+	<entry name="BattleHardenedFlavor" value="As Conscripts learn the ways of the battlefield, their resolve will grow."/>#
+	//ImperialGuardScout
+	<entry name="RoughTerrainStealth" value="Rough Terrain Stealth"/>
+	<entry name="RoughTerrainStealthDescription" value="Gives Stealth in Forests and Imperial Ruins"/>
+	<entry name="RoughTerrainStealthFlavor" value="Trained, or naturally gifted in moving through rough terrain without being seen, the unit can avoid the gaze of most enemies"/>#
 </language>
