@@ -182,5 +182,6 @@
 		<unit type="AstraMilitarum/TechpriestEnginseer"/>
 		<unit type="AstraMilitarum/Guardsman" count="3"/>
 		<unit type="AstraMilitarum/Conscript"/>
+		<unit type="AstraMilitarum/LordCommissar"/>
 	</startingUnits>
 </faction>

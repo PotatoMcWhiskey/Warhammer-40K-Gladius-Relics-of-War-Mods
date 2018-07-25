@@ -394,4 +394,7 @@
 	<entry name="BayonetCharge" value="'Bayonet Charge"/>
 	<entry name="BayonetChargeDescription" value="Increases the movement."/>
 	<entry name="BayonetChargeFlavor" value="Increases the movement."/>
+	<entry name="ConscriptSergeant" value="Conscript Sergeant"/>
+	<entry name="ConscriptSergeantDescription" value="Increases the morale."/>
+	<entry name="ConscriptSergeantFlavor" value="Although themselves fully trained and accepted Guardsmen, Whiteshield sergeants wear the white badge and helmet stripe of their squad."/>
 </language>

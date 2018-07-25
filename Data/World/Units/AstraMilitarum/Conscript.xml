@@ -56,6 +56,7 @@
 				<movementMax set="2"/>
 				<productionCost set="24.0"/> <!-- %productionCost set tier=4 factor=1 -->
 				<rangedAccuracy set="3"/> <!-- %rangedAccuracy set ballisticSkill=3 -->
+				<levelMax set="9"/>
 			</effects>
 		</modifier>
 	</modifiers>
@@ -117,6 +118,25 @@
 				</selfTarget>
 			</targets>
 		</ereWeGo>
+		<auraOfDiscipline 	name="ConscriptSergeant"
+							passive="1" rank="-1" rankMax="2">
+			<targets>
+				<selfTarget>
+					<areas>
+						<area affects="Unit">
+							<modifiers>
+								<modifier>
+									<effects>
+										<addTrait name="ConscriptSergeant"/>
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</selfTarget>
+			</targets>
+		</auraOfDiscipline>
+		<levelUp/>
 	</actions>
 	<traits>
 		<trait name="ExtraInfantryArmour" requiredUpgrade="AstraMilitarum/ExtraInfantryArmour"/>
