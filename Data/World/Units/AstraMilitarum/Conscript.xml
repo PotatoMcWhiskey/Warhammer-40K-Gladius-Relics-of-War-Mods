@@ -121,5 +121,6 @@
 	<traits>
 		<trait name="ExtraInfantryArmour" requiredUpgrade="AstraMilitarum/ExtraInfantryArmour"/>
 		<trait name="VoxCaster" requiredUpgrade="AstraMilitarum/VoxCaster"/>
+		<trait name="EndlessReserves" requiredUpgrade="AstraMilitarum/EndlessReserves"/>
 	</traits>
 </unit>

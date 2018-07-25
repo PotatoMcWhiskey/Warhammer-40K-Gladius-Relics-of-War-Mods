@@ -784,4 +784,7 @@
 	<entry name="BayonetCharge" value="Bayonet Charge"/>
 	<entry name="BayonetChargeDescription" value="Increases the movement."/>
 	<entry name="BayonetChargeFlavor" value="A swarm of flesh and blades"/>
+	<entry name="EndlessReserves" value="Endless Reserves"/>
+	<entry name="EndlessReservesDescription" value="Restores Hitpoints each turn."/>
+	<entry name="EndlessReservesFlavor" value="The vast Imperium of man has untold billions ready to be pressed into service."/>
 </language>
