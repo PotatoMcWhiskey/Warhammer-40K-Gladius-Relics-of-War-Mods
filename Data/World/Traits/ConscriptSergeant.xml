@@ -8,7 +8,7 @@
 				</unit>
 			</conditions>
 			<effects>
-				<moraleMax addMin="1" addMax="1"/>
+				<moraleMax addMin="1" addMax="2"/>
 			</effects>
 		</modifier>
 	</modifiers>

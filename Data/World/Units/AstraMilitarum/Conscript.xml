@@ -52,11 +52,11 @@
 				<!-- <meleeInitiative set="3"/> -->
 				<oreCost set="10.0"/> <!-- %oreCost set tier=4 factor=0.5 -->
 				<meleeDamage set="1"/> <!-- %meleeDamage set strength=3 -->
-				<moraleMax set="3"/>
+				<moraleMax set="2"/>
 				<movementMax set="2"/>
 				<productionCost set="24.0"/> <!-- %productionCost set tier=4 factor=1 -->
 				<rangedAccuracy set="3"/> <!-- %rangedAccuracy set ballisticSkill=3 -->
-				<levelMax set="9"/>
+				<levelMax set="5"/>
 			</effects>
 		</modifier>
 	</modifiers>
@@ -119,7 +119,7 @@
 			</targets>
 		</ereWeGo>
 		<auraOfDiscipline 	name="ConscriptSergeant"
-							passive="1" rank="-1" rankMax="2">
+							passive="1" rank="-1" rankMax="1">
 			<targets>
 				<selfTarget>
 					<areas>
@@ -136,11 +136,28 @@
 				</selfTarget>
 			</targets>
 		</auraOfDiscipline>
+		<genericUnitAbility 	name="BattleHardened"
+							passive="1" rank="-1" rankMax="2">
+			<targets>
+				<selfTarget>
+					<areas>
+						<area affects="Unit">
+							<modifiers>
+								<modifier>
+									<effects>
+										<addTrait name="BattleHardened"/>
+									</effects>
+								</modifier>
+							</modifiers>
+						</area>
+					</areas>
+				</selfTarget>
+			</targets>
+		</genericUnitAbility>
 		<levelUp/>
 	</actions>
 	<traits>
 		<trait name="ExtraInfantryArmour" requiredUpgrade="AstraMilitarum/ExtraInfantryArmour"/>
-		<trait name="VoxCaster" requiredUpgrade="AstraMilitarum/VoxCaster"/>
 		<trait name="EndlessReserves" requiredUpgrade="AstraMilitarum/EndlessReserves"/>
 	</traits>
 </unit>
