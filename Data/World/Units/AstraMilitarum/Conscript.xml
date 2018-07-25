@@ -56,7 +56,7 @@
 				<movementMax set="2"/>
 				<productionCost set="24.0"/> <!-- %productionCost set tier=4 factor=1 -->
 				<rangedAccuracy set="3"/> <!-- %rangedAccuracy set ballisticSkill=3 -->
-				<levelMax set="5"/>
+				<levelMax set="4"/>
 			</effects>
 		</modifier>
 	</modifiers>
